@@ -1,0 +1,11 @@
+#summary People and sites that help
+
+= These are various sites that helped =
+
+  * [http://dohpaz.com/flydom/ flydom] for jQuery
+  * [http://stackoverflow.com/questions/1104295/jquery-use-canvas-to-draw-lines-between-divs jquery and canvas], use canvas to draw arrows between div tags.
+  * How to draw nice [http://www.things.org.uk/examples/arrowtest.html arrows].
+  * [http://thejit.org/ JS Visualization] looks cool, but I never used it.
+  * [http://hacks.mozilla.org/2009/06/localstorage/ localstorage] api.
+  * [http://www.mysqlperformanceblog.com/2007/01/08/innodb-vs-myisam-vs-falcon-benchmarks-part-1/ MySQL] innodb and myisam shoot out.
+  * Test [https://svn.apache.org/repos/asf/incubator/olio/webapp/java/trunk/etc/schema.sql sql] I found.
