@@ -7,10 +7,11 @@ I wanted a simple tool that I could dump my database structure into and it would
 
 Then as I changed my database, I could have a visual history of the changes.
 
-= MySQL =
+==Warning: MySQL only==
 
 Currently database-diagram only works with MySQL 5 dumps - structure only. MyISAM and InnoDB.
 
 = Next =
 
-[HowToUseIt How to use it.]
+  * [HowToUseIt How to use it].
+  * [HowItWorks How it works].
