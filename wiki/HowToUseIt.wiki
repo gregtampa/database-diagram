@@ -1,5 +1,4 @@
 #summary How to use database-diagram.
-#labels Featured
 
 =How to use it:=
 
