@@ -7,7 +7,11 @@ I wanted a simple tool that I could dump my database structure into and it would
 
 When I change the database, I could have a visual history of the changes.
 
-==Warning: MySQL only==
+== Warning: Firefox 3.5+ only==
+
+Database-diagram uses the canvas tag and localStorage which are Firefox 3.5 only.
+
+== Warning: MySQL only ==
 
 Currently database-diagram only works with MySQL 5 dumps - structure only. MyISAM and InnoDB.
 
