@@ -21,3 +21,5 @@ Currently database-diagram only works with MySQL 5 dumps - structure only. MyISA
   * [HowItWorks How it works].
   * Download and [Install install] database-diagram.
   * [HackTheCode Hack the code], more details on implementation.
+
+  * [Links links] that I found useful.
