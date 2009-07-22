@@ -5,7 +5,7 @@
 
 I wanted a simple tool that I could dump my database structure into and it would show me a diagram.
 
-Then as I changed my database, I could have a visual history of the changes.
+When I change the database, I could have a visual history of the changes.
 
 ==Warning: MySQL only==
 
