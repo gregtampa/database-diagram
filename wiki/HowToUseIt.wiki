@@ -1,0 +1,15 @@
+#summary How to use database-diagram.
+#labels Featured
+
+=How to use it:=
+
+  * Find your database and export as SQL dump. Structure only.
+  * Paste this SQL into the box
+  * Click go! (this may take a while) 
+
+=More control:=
+
+  * Find your database and export as SQL dump. Structure only.
+  * Trim the SQL to only show tables you are interested in.
+  * Paste this SQL into the box
+  * Click go! (this may take a while) 
