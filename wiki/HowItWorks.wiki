@@ -14,6 +14,10 @@ The 3 steps are 3 processes, it would be simple to remove the last process and d
 
 =How does it find a foreign key?=
 
+==MySQL: InnoDB==
+
+Reads the *{{{CONSTRAINT <name> FOREIGN KEY (<column name>) REFERENCES <table> (<column name>)}}}* and figures it out.
+
 ==MySQL: MyISAM==
 
 [http://www.ss64.com/ora/syntax-naming.html DB syntax naming]
@@ -22,9 +26,9 @@ MyISAM does not support foreign keys (foreign key constraints are enforced throu
 
 I name my foreign keys *fk_table_name* this links to the primary key which I always call id. Any column names that start or end:
 
-  * Starts with {{{fk_}}}, e.g. *fk_table_name*
-  * Ends with *_fk*, e.g. *table_name_fk*
-  * Has *dbd:fk-to:table_name* in the column COMMENT. 'dbd' *d*ata*b*ase-*d*iagram.
+  * Starts with *{{{fk_}}}*, e.g. *{{{fk_table_name}}}*
+  * Ends with *{{{_fk}}}*, e.g. *{{{table_name_fk}}}*
+  * Has *{{{dbd:fk-to:table_name}}}* in the column COMMENT. 'dbd' is short for DataBase-Diagram.
 
 I name a table of clients 'clients', but a table that has a foreign key to the clients table is *fk_client* (we are linking to a single client), note the missing *s*. There is a little hack in the code to take this pluralization into account.
 
