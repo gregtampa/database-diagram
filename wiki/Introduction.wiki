@@ -7,6 +7,11 @@ I wanted a simple tool that I could dump my database structure into and it would
 
 When I change the database, I could have a visual history of the changes.
 
+= Demo site =
+
+  * [http://teethgrinder.co.uk/database-diagram/test-MySQL-MyISAM.html Example database]
+  * Paste your [http://teethgrinder.co.uk/database-diagram/ SQL structure] into this page.
+
 = Next =
 
   * [HowToUseIt How to use it].
