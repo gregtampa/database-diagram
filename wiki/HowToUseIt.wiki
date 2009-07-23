@@ -13,7 +13,7 @@
   * Paste this SQL into the box
   * Click go! (this may take a while)
 
-=Test it=
+=Prototypes:=
 
 Remember the good old days when databases were called Databases and required Big Iron machines to run on? No? Nor me.
 
