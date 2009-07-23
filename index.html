@@ -144,6 +144,9 @@ Storage.prototype.getObject = function(key) {
 
 function save_position(obj)
 {
+	if(!window['localStorage'])
+		return;
+	
 	var db = 'databaseName'
 	var name = obj.id;
 	var pos = $(obj).position();
@@ -156,6 +159,9 @@ function save_position(obj)
 
 function load_position(obj)
 {
+	if(!window['localStorage'])
+		return null;	// <-- only firefox has this, chrome and opera don't
+
 	var db = 'databaseName'
 	var name = obj.id;
 	var storage = window['localStorage'];
