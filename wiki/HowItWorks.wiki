@@ -22,7 +22,7 @@ MyISAM does not support foreign keys (foreign key constraints are enforced throu
 
 I name my foreign keys *fk_table_name* this links to the primary key which I always call id. Any column names that start or end:
 
-  * Starts with *fk_*, e.g. *fk_table_name*
+  * Starts with {{{fk_}}}, e.g. *fk_table_name*
   * Ends with *_fk*, e.g. *table_name_fk*
   * Has *dbd:fk-to:table_name* in the column COMMENT. 'dbd' *d*ata*b*ase-*d*iagram.
 
