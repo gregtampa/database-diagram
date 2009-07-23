@@ -11,4 +11,10 @@
   * Find your database and export as SQL dump. Structure only.
   * Trim the SQL to only show tables you are interested in.
   * Paste this SQL into the box
-  * Click go! (this may take a while) 
+  * Click go! (this may take a while)
+
+=Test it=
+
+Remember the good old days when databases were called Databases and required Big Iron machines to run on? No? Nor me.
+
+I treat databases like interesting files, just make a new one called 'test_dbd' add some tables that may relate to your application (staff, customers, orders, items) add primary and foreign keys. Now throw this into database-diagram and take a look.
