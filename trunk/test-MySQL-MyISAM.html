@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<meta equiv="Content-type" content="text/html; charset=utf8" />
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flydom-3.1.1.js"></script>
+	<link type="text/css" href="css/ui-lightness/jquery-ui-1.7.2.custom.css" rel="Stylesheet" />
+	
+	<link type="text/css" href="css/database-diagram-0.1.css" rel="Stylesheet" />
+	<script type="text/javascript" src="js/database-diagram-parser-0.1.js"></script>
+	<script type="text/javascript" src="js/database-diagram-graph-0.1.js"></script>
+	<script type="text/javascript" src="js/database-diagram-storage-0.1.js"></script>
+	<script type="text/javascript" src="js/database-diagram-0.1.js"></script>
+	
+<script type="text/javascript">
+	
+$(document).ready(function(){});
+
+function go()
+{
+	dbd($("#sql").val());
+}
+
+</script>
+</head>
+<body>
+
+
+<canvas id="canvas"></canvas>
+<div style="padding-top: 640px;">
+
+<input type="button" onclick="go()" value="moo">
+
+<textarea id="sql">
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`projects` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `projects`;
+
+CREATE TABLE `test` (
+  `id` int(11) NOT NULL auto_increment,
+  `fk_item` varchar(64) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `item_payment` (
+  `id` int(11) NOT NULL auto_increment,
+  `text` varchar(64) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `item_status` (
+  `id` int(11) NOT NULL auto_increment,
+  `status` varchar(64) default NULL,
+  `order` int(11) default NULL,
+  `class` varchar(8) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `items` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(256) default NULL,
+  `approx_cost` float default NULL,
+  `fk_item_payment` int(11) default NULL,
+  `fk_item_status` int(11) default NULL,
+  `project_fk` int(11) default NULL,
+  `fk_staff` int(11) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1491 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `projects` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(64) default NULL,
+  `fk_sales` int(11) default NULL COMMENT 'This is the sales manager, dbd:fk-to:staff',
+  `fk_project_manager` int(11) default NULL COMMENT 'xxx dbd:fk-to:staff xxx',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `staff` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(200) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=939 DEFAULT CHARSET=latin1;
+
+</textarea>
+
+<h2>Test: MySQL - MyISAM</h2>
+<p>
+Tests:
+<ul>
+	<li>fk_table_name
+	<li>table_name_fk
+	<li>COMMENT 'stuff dbd:fk-to:staff other stuff'
+</p>
+
+</div>
+</body>
+</html>
