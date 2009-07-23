@@ -30,7 +30,7 @@ I name my foreign keys *fk_table_name* this links to a table whose primary key I
   * Ends with *{{{_fk}}}*, e.g. *{{{table_name_fk}}}*
   * Has *{{{dbd:fk-to:table_name}}}* in the column COMMENT. 'dbd' is short for database-diagram.
 
-Example: I have a table called blog_posts with columns {{{id, fk_author, post}}}. In the diagram fk_author will join to the authors table.
+Example: A table called blog_posts with columns {{{id, fk_author, post}}}. In the diagram {{{fk_author}}} will join to the authors table.
 
 I name a table of clients 'clients', but a table that has a foreign key to the clients table is *fk_client* (we are linking to a single client), note the missing *s*. There is a little hack in the code to take this pluralization into account.
 
