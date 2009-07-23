@@ -28,7 +28,7 @@ I name my foreign keys *fk_table_name* this links to a table whose primary key I
 
   * Starts with *{{{fk_}}}*, e.g. *{{{fk_table_name}}}*
   * Ends with *{{{_fk}}}*, e.g. *{{{table_name_fk}}}*
-  * Has *{{{dbd:fk-to:table_name}}}* in the column COMMENT. 'dbd' is short for DataBase-Diagram.
+  * Has *{{{dbd:fk-to:table_name}}}* in the column COMMENT. 'dbd' is short for database-diagram.
 
 Example: I have a table called blog_posts with columns [id, fk_author, post]. In the diagram fk_author will join to the authors table.
 
