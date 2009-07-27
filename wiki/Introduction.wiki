@@ -21,6 +21,12 @@ When I change the database, I could have a visual history of the changes.
 
   * [Links links] that I found useful.
 
+== Forum ==
+
+Get help, post ideas, bugs, patches or mashups here:
+
+[http://n2.nabble.com/database-diagram-f3333903.html database-diagram forum]
+
 == Warning: MySQL 5.0+ only ==
 
 Currently database-diagram only works with MySQL 5 dumps - structure only. MyISAM and InnoDB.
